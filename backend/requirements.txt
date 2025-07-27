@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+langchain
+pypdf
+faiss-cpu
+langchain-google-genai
