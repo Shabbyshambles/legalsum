@@ -3,9 +3,11 @@ import requests
 from fastapi import FastAPI, UploadFile, File
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-
+from dotenv import load_dotenv
 # Set your Google API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBotq_ZxvsWVKP-fGZ4yTy9rbSC2FRK_7c"
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+print("api="+ str(GOOGLE_API_KEY))
 
 app = FastAPI()
 

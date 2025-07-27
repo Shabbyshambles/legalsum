@@ -4,3 +4,4 @@ langchain
 pypdf
 faiss-cpu
 langchain-google-genai
+dotenv
